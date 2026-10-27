@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f5f2e9"/>
+  <path d="M64 111h1072M64 559h1072" stroke="#d3cebf"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#292d26">
+    <text x="64" y="76" font-size="28">The Ship of Theseus</text>
+    <text x="61" y="238" font-size="88" letter-spacing="-4">Still the</text>
+    <text x="61" y="328" font-size="88" letter-spacing="-4">same ship.</text>
+    <text x="61" y="421" font-size="88" letter-spacing="-4" font-style="italic" fill="#a43b25">Probably.</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#656457" font-size="20">
+    <text x="65" y="488">A small website having a large identity crisis.</text>
+    <text x="65" y="597">One plank at a time.</text>
+    <text x="979" y="597">Version 1</text>
+  </g>
+  <g transform="translate(560 133) scale(.94)" stroke="#292d26" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="320" cy="210" r="184" fill="none" stroke="#d8d3c5"/>
+    <path d="m317 69-175 214m183-208 179 208" fill="none" stroke="#656457"/>
+    <path d="M310 85C289 135 231 195 188 242c40-9 81-9 122-2Zm18-1c40 48 86 119 139 158-49-15-95-16-139-4Z" fill="#fffdf7"/>
+    <path d="M307 110c-12 49-47 94-77 127m103-126c24 54 58 95 93 123" fill="none" stroke="#d8d3c5"/>
+    <path d="M318 45v238" fill="none" stroke-width="3"/>
+    <path d="M319 46c19-13 35 12 59-1l-9 36c-21 9-34-13-50-1Z" fill="#a43b25" stroke="#a43b25"/>
+    <text x="342" y="70" fill="#fffdf7" stroke="none" font-family="Georgia, serif" font-size="22" font-style="italic">?</text>
+    <path d="M355 181q21-23 43 0-21 22-43 0Z" fill="none"/><circle cx="377" cy="181" r="6" fill="#292d26"/>
+    <path d="m121 284-9-12h417l-5 12Z" fill="#ebe7da"/>
+    <path d="M121 284H524C502 343 451 368 337 368S158 344 121 284Z" fill="#bdab85"/>
+    <path d="M188 284v65m67-65v79m67-79v84m67-84v81m67-81v68M140 301h372m-351 14h338m-315 18h294m-262 17h239" fill="none" opacity=".4"/>
+    <path d="M95 391q20-10 40 0t40 0m22 0q20-10 40 0t40 0m22 0q20-10 40 0t40 0m22 0q20-10 40 0t40 0" fill="none" stroke="#656457"/>
+  </g>
+</svg>

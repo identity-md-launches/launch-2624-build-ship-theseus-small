@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>The Ship of Theseus · Still the same ship. Probably.</title>
+  <meta name="description" content="A small website having a large identity crisis. Replace a plank, question the ship, and consult the paperwork.">
+  <meta name="theme-color" content="#f5f2e9">
+  <meta property="og:title" content="The Ship of Theseus">
+  <meta property="og:description" content="Still the same ship. Probably. A small, interactive experiment in questionable repairs.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/share.png">
+  <meta property="og:image:alt" content="An illustrated sailing ship and the words Still the same ship. Probably.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/site.css">
+  <script type="module" src="./assets/ship.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="The Ship of Theseus, home">
+        <svg class="brand-mark" viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><path d="M18 3v23M15 7 5 23h10V7Zm7 1v15h10L22 8ZM4 27h28l-6 6H10l-6-6Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span>The Ship of Theseus</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a class="home-nav" href="./" aria-current="page">The ship</a>
+        <a href="./changelog/">Changelog <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="experiment" aria-labelledby="experiment-title">
+        <div class="experiment-copy">
+          <h1 id="experiment-title">Still the <br>same ship. <br><em>Probably.</em></h1>
+          <p class="intro">A small website having a large identity crisis.</p>
+          <div class="experiment-actions">
+            <button class="button button-primary" id="replace" type="button" aria-describedby="replace-hint" disabled>Replace a plank <span aria-hidden="true">↗</span></button>
+            <p class="control-hint" id="replace-hint">One repair. One very reasonable substitution.</p>
+          </div>
+          <noscript><p class="notice">The ship is here, but repairs need JavaScript. Enable it to replace a plank. The changelog still works.</p></noscript>
+        </div>
+
+        <figure class="ship-figure">
+          <div class="figure-heading"><span>Fig. 01</span><span id="figure-state">A ship, for now.</span></div>
+          <svg class="ship-drawing" id="ship-drawing" viewBox="0 0 620 430" role="img" aria-labelledby="ship-title ship-description">
+            <title id="ship-title">The Ship of Theseus, before repairs</title>
+            <desc id="ship-description">A sailing ship with six wooden hull planks, a watchful eye on its sail, and a question mark on its flag.</desc>
+            <defs>
+              <clipPath id="hull-clip"><path d="M121 284H524C502 343 451 368 337 368S158 344 121 284Z"/></clipPath>
+              <pattern id="receipt" width="18" height="14" patternUnits="userSpaceOnUse"><rect width="18" height="14" fill="#f5f2e9"/><path d="M3 4h12M3 8h8" stroke="#888477" stroke-width="1"/></pattern>
+              <pattern id="cheese" width="32" height="30" patternUnits="userSpaceOnUse"><rect width="32" height="30" fill="#dac76e"/><circle cx="9" cy="8" r="4" fill="#b9a045"/><circle cx="27" cy="24" r="6" fill="#b9a045"/></pattern>
+              <pattern id="knitting" width="16" height="14" patternUnits="userSpaceOnUse"><rect width="16" height="14" fill="#b5bcc5"/><path d="m0 0 8 7 8-7M0 7l8 7 8-7" fill="none" stroke="#69778a" stroke-width="1"/></pattern>
+              <pattern id="thursday" width="25" height="25" patternUnits="userSpaceOnUse"><rect width="25" height="25" fill="#cdc3d8"/><path d="m3 8 5 5 8-9M3 20h14" fill="none" stroke="#7c6a90" stroke-width="1.5"/></pattern>
+              <pattern id="absence" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#f5f2e9"/><path d="m0 12 12-12" stroke="#c7c1b2" stroke-width="1"/></pattern>
+            </defs>
+            <g class="drawing-guide" fill="none" stroke-width="1">
+              <circle cx="320" cy="210" r="184"/>
+              <path d="M320 12v18m0 364v18M122 210h18m364 0h18M20 381h580M44 375v12m532-12v12"/>
+              <path d="M140 71h49M164 47v48M504 111h26m-13-13v26"/>
+            </g>
+            <g class="ship-lines" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path class="rigging" d="m317 69-175 214m183-208 179 208" fill="none"/>
+              <path class="sail sail-left" d="M310 85C289 135 231 195 188 242c40-9 81-9 122-2Z"/>
+              <path class="sail sail-right" d="M328 84c40 48 86 119 139 158-49-15-95-16-139-4Z"/>
+              <path class="sail-seam" d="M307 110c-12 49-47 94-77 127m103-126c24 54 58 95 93 123" fill="none"/>
+              <path d="M318 45v238" fill="none" stroke-width="3"/>
+              <path class="flag" d="M319 46c19-13 35 12 59-1l-9 36c-21 9-34-13-50-1Z"/>
+              <text class="flag-question" x="342" y="70" stroke="none">?</text>
+              <g class="sail-eye" fill="none"><path d="M355 181q21-23 43 0-21 22-43 0Z"/><circle cx="377" cy="181" r="6" class="eye-pupil"/></g>
+              <path class="deck" d="m121 284-9-12h417l-5 12Z"/>
+              <g clip-path="url(#hull-clip)" id="hull-planks">
+                <rect class="plank" data-plank="0" x="120" y="284" width="68" height="90"/>
+                <rect class="plank" data-plank="1" x="188" y="284" width="67" height="90"/>
+                <rect class="plank" data-plank="2" x="255" y="284" width="67" height="90"/>
+                <rect class="plank" data-plank="3" x="322" y="284" width="67" height="90"/>
+                <rect class="plank" data-plank="4" x="389" y="284" width="67" height="90"/>
+                <rect class="plank" data-plank="5" x="456" y="284" width="69" height="90"/>
+                <path class="wood-grain" d="M130 301h377m-350 14h333m-313 18h293m-267 17h232" fill="none"/>
+                <g class="hull-nails" stroke="none"><circle cx="176" cy="295" r="2"/><circle cx="243" cy="295" r="2"/><circle cx="310" cy="295" r="2"/><circle cx="377" cy="295" r="2"/><circle cx="444" cy="295" r="2"/><circle cx="478" cy="295" r="2"/></g>
+              </g>
+              <path d="M121 284H524C502 343 451 368 337 368S158 344 121 284Z" fill="none"/>
+              <path class="water" d="M95 391q20-10 40 0t40 0m22 0q20-10 40 0t40 0m22 0q20-10 40 0t40 0m22 0q20-10 40 0t40 0" fill="none"/>
+            </g>
+            <path class="annotation-line" d="m483 334 42 18h52" fill="none" stroke-width="1"/>
+            <text class="drawing-note" x="514" y="371">allegedly seaworthy</text>
+          </svg>
+          <figcaption><span class="status-dot" aria-hidden="true"></span><span id="identity-label">Identity intact. No one has asked questions.</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="condition" aria-label="Ship condition">
+        <div class="condition-stat"><span class="stat-label">Original planks</span><p class="stat-value"><span id="original-count">6</span><span class="stat-total"> / 6</span></p></div>
+        <div class="condition-stat"><span class="stat-label">Official designation</span><p class="designation" id="designation">Still a ship.</p></div>
+        <div class="condition-statement"><span class="stat-label">A word from the ship</span><p id="ship-statement">“I would prefer we didn’t make this philosophical.”</p></div>
+      </section>
+
+      <section class="below-deck" aria-labelledby="inventory-title">
+        <div class="inventory">
+          <div class="section-heading"><h2 id="inventory-title">The current arrangement</h2><span class="small-text" id="repair-count">No repairs yet</span></div>
+          <ol class="plank-list" id="plank-list" aria-label="Hull plank inventory">
+            <li><span class="plank-number">01</span><span class="material-swatch" data-material="wood" aria-hidden="true"></span><span data-material-name>Perfectly ordinary wood</span></li>
+            <li><span class="plank-number">02</span><span class="material-swatch" data-material="wood" aria-hidden="true"></span><span data-material-name>Perfectly ordinary wood</span></li>
+            <li><span class="plank-number">03</span><span class="material-swatch" data-material="wood" aria-hidden="true"></span><span data-material-name>Perfectly ordinary wood</span></li>
+            <li><span class="plank-number">04</span><span class="material-swatch" data-material="wood" aria-hidden="true"></span><span data-material-name>Perfectly ordinary wood</span></li>
+            <li><span class="plank-number">05</span><span class="material-swatch" data-material="wood" aria-hidden="true"></span><span data-material-name>Perfectly ordinary wood</span></li>
+            <li><span class="plank-number">06</span><span class="material-swatch" data-material="wood" aria-hidden="true"></span><span data-material-name>Perfectly ordinary wood</span></li>
+          </ol>
+          <div class="secondary-actions"><button class="button button-secondary" id="undo" type="button" disabled><span aria-hidden="true">↶</span> Undo last repair</button><button class="text-button" id="reset" type="button" disabled>Start over</button></div>
+          <p class="small-text save-note" id="save-note">Your experiment stays in this browser.</p>
+        </div>
+        <aside class="captains-note" aria-labelledby="note-title">
+          <svg class="asterisk" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><path d="M24 1v46M1 24h46M8 8l32 32M8 40 40 8" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h2 id="note-title">A note from the captain</h2>
+          <p>This site is a ship. Every version replaces a little piece of it. At some point, nothing original will remain.</p>
+          <p>The URL will insist otherwise.</p>
+          <a class="inline-link" href="./changelog/">Read the changelog <span aria-hidden="true">↗</span></a>
+        </aside>
+      </section>
+      <p class="sr-only" id="repair-announcement" role="status" aria-live="polite" aria-atomic="true"></p>
+    </main>
+
+    <footer class="site-footer"><span>An ongoing identity crisis.</span><a href="./changelog/#entry-1">Version 1 · The first plank</a><span>No actual ships were harmed.</span></footer>
+  </div>
+</body>
+</html>
